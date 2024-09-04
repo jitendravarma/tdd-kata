@@ -8,7 +8,7 @@ def add(numbers:str) -> int:
     Input: numebers: str
     Returns: int
     """
-
+    numbers = numbers.replace("\n", "")
     if not numbers:
         return 0
     numbers = list(map(int, numbers.split(',')))
