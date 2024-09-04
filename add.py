@@ -1,5 +1,3 @@
-#add
-
 def check_negative(numbers: list)->list:
     """
     process list for negative numbers
@@ -35,7 +33,6 @@ def add(numbers:str) -> int:
     # return 0 for empty string
     if not numbers:
         return 0
-    
     numbers = handle_delimiter(numbers=numbers)
     #replace emptylines if any
     numbers = numbers.replace("\n", "")
