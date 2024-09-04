@@ -9,3 +9,7 @@ assert add("1,2") == 3
 assert add("1,\n6") == 7
 # test case to handle multiple new line
 assert add("2,\n3\n\n") == 5
+
+# to test special delimiters
+assert add("//;\n1;2") == 3
+assert add("//@\n1@2") == 3
