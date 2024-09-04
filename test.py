@@ -13,3 +13,9 @@ assert add("2,\n3\n\n") == 5
 # to test special delimiters
 assert add("//;\n1;2") == 3
 assert add("//@\n1@2") == 3
+
+# validate negative numbers
+try:
+    add("//;\n1;-2;3")
+except ValueError as e:
+    assert str(e) == "negative numbers not allowed: -2"
